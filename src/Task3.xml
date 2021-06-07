@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Runner">
+    <listeners>
+        <listener class-name="engine.ListenerConfig"/>
+    </listeners>
+
+    <test name="Test1">
+        <classes>
+            <class name="tests.com.wheelsUp.api.Task3"/>
+        </classes>
+    </test>
+
+</suite>
