@@ -10,8 +10,8 @@ import java.util.Properties;
 
 public enum PropertiesReader {
 
-    CONFIGURATIONS("src\\main\\resources\\properties\\configuration.properties"),
-    URL("src\\test\\resources\\url.properties");
+    CONFIGURATIONS("src/main/resources/properties/configuration.properties"),
+    URL("src/test/resources/url.properties");
 
     private final Logger LOG = LoggerFactory.getLogger(PropertiesReader.class);
     private Properties properties;
