@@ -43,7 +43,7 @@ public class Task2 extends WheelsUpBaseTest {
         browserUtils.writeText("00000", requestInfoPage.zipField);
         browserUtils.writeText("AnyState", requestInfoPage.stateField);
         browserUtils.writeText("AnyCountry", requestInfoPage.countryField);
-        browserUtils.clickElement(requestInfoPage.closeButton);
+        browserUtils.moveAndClickElement(requestInfoPage.closeButton);
     }
 
 }

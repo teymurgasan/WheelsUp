@@ -96,6 +96,14 @@ public class BrowserUtils {
 
     }
 
+    @Step("Move to element {locator.name} and click")
+    public void moveAndClickElement(Locator locator) {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator.locator));
+        actions.moveToElement(driver.findElement(locator.locator)).click().build().perform();
+        LOG.info("Move to element {} and click", locator.name);
+
+    }
+
     @Step("Scroll to bottom")
     public void scrollToBottom() {
         ((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight)");
