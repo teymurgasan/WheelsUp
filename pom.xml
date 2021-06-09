@@ -112,7 +112,7 @@
                 <version>${maven-surfire-plugin.version}</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>src\Runner.xml</suiteXmlFile>
+                        <suiteXmlFile>src\Task2.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <argLine>
                         -javaagent:"${aspectj.path}"
